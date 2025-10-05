@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CPO Strategy Worker Input","type":"object","properties":{"portfolio_scope":{"type":"string"},"horizon_months":{"type":"integer"}},"required":["portfolio_scope","horizon_months"]}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"OKR Planner Input","type":"object","properties":{"period":{"type":"string"}},"required":["period"]}
