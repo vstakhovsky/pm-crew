@@ -1,1 +1,18 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CPO Strategy Worker Input","type":"object","properties":{"portfolio_scope":{"type":"string"},"horizon_months":{"type":"integer"}},"required":["portfolio_scope","horizon_months"]}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPO Strategy Contract",
+  "type": "object",
+  "properties": {
+    "portfolio_scope": { "type": "string" },
+    "horizon_months": { "type": "integer", "minimum": 3, "maximum": 36 },
+    "domains": { "type": "array", "items": { "type": "string" } },
+    "target_markets": { "type": "array", "items": { "type": "string" } },
+    "prd_paths": { "type": "array", "items": { "type": "string" } },
+    "adr_paths": { "type": "array", "items": { "type": "string" } },
+    "design_paths": { "type": "array", "items": { "type": "string" } },
+    "guardrails": { "type": "array", "items": { "type": "string" } },
+    "token_budget": { "type": "integer", "minimum": 2_000, "maximum": 64_000 }
+  },
+  "required": ["portfolio_scope", "horizon_months"],
+  "additionalProperties": false
+}
