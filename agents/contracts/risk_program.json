@@ -1,1 +1,12 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Risk Program Worker Input","type":"object","properties":{"scope":{"type":"string"}},"required":["scope"]}
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Risk Program Contract",
+  "type":"object",
+  "properties":{
+    "scope":{"type":"string"},
+    "risk_types":{"type":"array","items":{"type":"string"}},
+    "standards":{"type":"array","items":{"type":"string"}}
+  },
+  "required":["scope"],
+  "additionalProperties":false
+}
