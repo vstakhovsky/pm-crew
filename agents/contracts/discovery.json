@@ -1,1 +1,12 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Discovery Worker Input","type":"object","properties":{"questions":{"type":"array","items":{"type":"string"}}},"required":["questions"]}
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Discovery Contract",
+  "type":"object",
+  "properties":{
+    "questions":{"type":"array","items":{"type":"string"}},
+    "data_sources":{"type":"array","items":{"type":"string"}},
+    "hypotheses_csv_path":{"type":"string"}
+  },
+  "required":["questions","data_sources"],
+  "additionalProperties":false
+}
